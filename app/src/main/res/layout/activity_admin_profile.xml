@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Central Image and Text (Empty State) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/emptystate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No products found!"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please upload products to start"
+            android:textSize="16sp"
+            android:textColor="#888888"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation with icons for chat, upload, previous products, and interactions -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:padding="12dp">
+
+        <!-- Chat Icon -->
+        <ImageButton
+            android:id="@+id/chat_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/chat"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Chat Icon"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/payment_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/payment"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Payment Icon"
+            android:outlineSpotShadowColor="#FFFFFF"
+            android:scaleType="centerInside" />
+
+        <!-- Upload Icon (for adding new products) -->
+
+        <!-- View Products Icon -->
+        <ImageButton
+            android:id="@+id/upload_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Upload Icon"
+            android:scaleType="centerInside"
+            android:src="@drawable/upload" />
+
+        <ImageButton
+            android:id="@+id/view_products_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/viewproducts"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="View Products Icon"
+            android:scaleType="centerInside" />
+
+        <!-- Product Interactions Icon -->
+        <ImageButton
+            android:id="@+id/product_interactions_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/pinteractions"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Product Interactions Icon"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+</RelativeLayout>
